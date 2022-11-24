@@ -1,5 +1,4 @@
 import pandas as pd
-from sklearn.ensemble import RandomForestRegressor
 import numpy as np
 import pickle
 import streamlit as st
