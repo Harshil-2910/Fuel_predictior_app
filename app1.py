@@ -26,7 +26,7 @@ def main():
     Fuel_Metering_Sys_Desc = st.slider("Fuel Metering Sys Desc", min_value = 0, max_value = 5, step = 1)
     Cyl_Deact = st.slider("Cyl Deact", min_value = 0, max_value = 2, step = 1)
    
-    results = ""
+    result = ""
     if st.button("Predict"):
         result = predict_price(Eng_Displ, No_Cyl, No_Gears,Max_Ethanol_Per_Gasoline, Intake_Valves_Per_Cyl,Exhaust_Valves_Per_Cyl, Trans_Creeper_Gear, Unqiue_Labels,Air_Aspiration_Method_Desc, Fuel_Metering_Sys_Desc, Cyl_Deact)
     st.success('The output is {}'.format(result))
